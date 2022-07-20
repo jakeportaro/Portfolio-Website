@@ -91,6 +91,11 @@ a:active {
   color: var(--a-active-color);
 }
 
+.social-media-icons {
+  height: 30px;
+  width: 30px;
+}
+
 .button, button {
   /* overwrites browser defaults and resets the border */
   border: none;
