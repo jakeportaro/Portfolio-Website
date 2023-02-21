@@ -58,6 +58,95 @@ Secondary Color (Orange): #e0b354;
   color:white;
   margin-left: 100px;
 }
+
+.contact{
+  color:white;
+ text-align: center;
+ font-size: 25px;
+}
+
+.wrapper.one {
+  background-color: #1a1a1a;
+}
+.drop-main {
+  display: flex;
+  font-size: 7rem;
+  margin: 1.5rem;
+  justify-content: center;
+  font-family: "Russo One", sans-serif;
+}
+.c1 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards;
+  color: red;
+}
+.o1 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.1s;
+  color: orange;
+}
+.n {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.2s;
+  color: yellow;
+}
+.t1 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.3s;
+  color: yellowgreen;
+}
+.a {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.4s;
+  color: green;
+}
+.c2 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.5s;
+  color: blue;
+}
+.t2 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.6s;
+  color: blueviolet;
+}
+.m {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.7s;
+  color: violet;
+}
+.e {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.8s;
+  color: pink;
+}
+.end {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.9s;
+  color: #44D62C
+}
+@keyframes drop {
+  0% {
+      transform: translateY(-200px);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+  65% {
+      transform: translateY(-17px);
+      opacity: 1;
+  }
+  75% {
+      transform: translateY(-22px);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
 .body{
   font-family: Lato, sans-serif;
   font-weight: 400;
