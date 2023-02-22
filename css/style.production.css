@@ -21,7 +21,7 @@ Secondary Color (Orange): #e0b354;
    display: -ms-flexbox;
    display: flex;
    width: auto;
-   padding: 20px;
+   margin-right:20px;
  }
  .page-header__item{
    width: 300px;
@@ -335,12 +335,35 @@ button:focus,
 }
 
 .grid__item {
-  background-color: lightgrey;
-  margin-left: 20px;
+  background-color: rgba(201, 175, 175, 0.5);
+  position: relative;
 }
 
-.grid-title {
-  margin-left: 20px;
+.grid__item a {
+  position: absolute;
+  bottom: 0;
+}
+
+.grid__item a:first-child {
+  left: 0;
+}
+
+.grid__item a:last-child {
+  right: 0;
+}
+
+.work-section{
+  margin-bottom: 10px;
+  
+}
+
+.project-img {
+  height: 300px;
+  width: 500px;
+}
+
+.see-app {
+margin-left: auto;
 }
 
 .page-footer{
@@ -465,3 +488,5 @@ button:focus,
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
           animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+
