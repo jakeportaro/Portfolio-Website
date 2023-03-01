@@ -170,11 +170,32 @@ line-height: 1.6;
     width: 50%;
   }
 
+  .wrapper.one {
+    background-color: #1a1a1a;
+  }
+  .drop-main {
+    display: flex;
+    font-size: 10px;
+    margin: 24px;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+  }
+
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    padding: 0 3px 3px 3px;
+    transform: translateY(-75px);
+  }
+
   .contact{
   color:white;
  text-align: center;
  font-size: 8px;
- width: auto;
+ width: 400px;
 }
 
   .grid__item {
