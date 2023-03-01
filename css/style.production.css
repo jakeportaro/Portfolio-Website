@@ -164,6 +164,43 @@ Secondary Color (Orange): #e0b354;
 line-height: 1.6;
 }
 
+@media only screen and (max-width: 400px) {
+  /* styles for screens smaller than 768px */
+  .logo {
+    width: 50%;
+  }
+
+  
+  .navigation-list {
+    flex-direction: column;
+  }
+  
+  .navigation-list__item {
+    padding: 10px;
+  }
+  
+  .profile__portrait {
+    width: 80%;
+  }
+  
+  .profile-index h1 {
+    font-size: 28px;
+  }
+  
+  .profile-index h2 {
+    font-size: 20px;
+  }
+  
+  .glow-on-hover {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  
+  .social-media-icons {
+    width: 30px;
+  }
+}
+
 
 h1 {
 font-size: 30px;
