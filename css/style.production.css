@@ -164,7 +164,7 @@ Secondary Color (Orange): #e0b354;
 line-height: 1.6;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   /* styles for screens smaller than 768px */
   .logo {
     width: 50%;
@@ -175,7 +175,7 @@ line-height: 1.6;
   }
   .drop-main {
     display: flex;
-    font-size: 10px;
+    font-size: 45px;
     margin: 24px;
     justify-content: center;
     font-family: "Russo One", sans-serif;
@@ -194,7 +194,7 @@ line-height: 1.6;
   .contact{
   color:white;
  text-align: center;
- font-size: 8px;
+ font-size: 35px;
  width: 400px;
 }
 
@@ -203,7 +203,7 @@ line-height: 1.6;
     position: relative;
     border-style:ridge;
     border-radius: 35px;
-    width:auto;
+    width:300px;
     height: auto;
     padding-bottom: 20px;
     
@@ -237,6 +237,18 @@ line-height: 1.6;
   .social-media-icons {
     width: 30px;
   }
+
+  .case-study {
+  max-width: 450px;
+  }
+
+  .case-study-img {
+    max-width: 90%;
+    border: #000;
+    border-style: ridge;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -417,7 +429,7 @@ button:focus,
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  padding: 0 100px 100px 100px;
+  padding: 0px 10px 0px 10px;
   transform: translateY(-75px);
 }
 
@@ -433,7 +445,7 @@ button:focus,
   position: relative;
   border-style:ridge;
   border-radius: 35px;
-  width:auto;
+  width: fit-content;
   height: auto;
   padding-bottom: 20px;
   
@@ -627,4 +639,6 @@ button:focus,
   .button-52 {
     padding: 13px 50px 13px;
   }
+}
+
 }
