@@ -34,13 +34,6 @@ Secondary Color (Orange): #e0b354;
    text-align: right;
  }
 
- .logo {
-  width: 500px;
-  height:200px;
-  transform: translateX(-140px) translateY(-25px)
-  
- 
- }
  .navigation-list {
    list-style-type: none;
  }
@@ -162,16 +155,109 @@ Secondary Color (Orange): #e0b354;
   background-size: cover; /* makes the background image cover the entire container */
   background-position: center; /* centers the background image within the container */
 line-height: 1.6;
+display: flex;
+flex-direction: column;
 }
 
-@media only screen and (max-width: 450px) {
+.case-study {
+  width: auto;
+  display: inline-block;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+ 
+}
+
+.case-study-img {
+  max-width: 70%;
+  border: #000;
+  border-style: ridge;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left:20px;
+  display: inline-block;
+}
+
+.case-study-btn {
+  font-size: 35px;
+}
+
+.case-study h2 {
+  display: inline;
+  transform: translateY(-100px);
+}
+
+
+.profile-index h1 {
+  font-size: 50px;
+  text-align: left;
+  transform: translateX(-50px);
+}
+
+.profile-index h2 {
+  font-size: 25px;
+  text-align: left;
+  transform: translateX(-50px);
+}
+
+.profile-index button {
+  transform: translateX(50px);
+}
+
+
+.google-meet {
+  font-size: 40px;
+  background-color: black;
+  border: #abb6ef;
+  border-style: ridge;
+  text-align: center;
+  width:100%;
+  
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.image {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.right-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.google-header{
+  background-color: black;
+}
+
+.view {
+  padding: 10px 20px;
+  border: none;
+  font-size: 35px;
+  
+  color: #fff;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
   /* styles for screens smaller than 768px */
-  .logo {
-    width: 50%;
-  }
+  
 
   .wrapper.one {
     background-color: #1a1a1a;
+    width:100%;
   }
   .drop-main {
     display: flex;
@@ -195,7 +281,7 @@ line-height: 1.6;
   color:white;
  text-align: center;
  font-size: 35px;
- width: 400px;
+ width: 100%;
 }
 
   .grid__item {
@@ -229,39 +315,43 @@ line-height: 1.6;
     font-size: 20px;
   }
   
-  .glow-on-hover {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
   
   .social-media-icons {
     width: 30px;
   }
 
-  .case-study {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .case-study-img {
-    max-width: 95%;
-    border: #000;
-    border-style: ridge;
-    border-radius: 20px;
-    margin-top: 10px;
-  }
 
-  .case-study-btn {
-    font-size: 25px;
-    color: white;
-    background-color: black;
-    border: white;
-    border-style: ridge;
-  border-radius: 20px;
-  }
+  .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.image {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.google-header {
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.view {
+  font-size: 35px;
+  position: relative;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+ text-align: center;
+}
+
   
   
   .profile-index h1 {
@@ -277,15 +367,43 @@ line-height: 1.6;
   }
 
   .profile-index button {
-    transform: translateX(30px);
+    position:relative;
+    align-items: left;
   }
 
 
   .google-meet {
-    font-size: 40px;
+    font-size: 30px;
     background-color: black;
     text-align: center;
     width:100%;
+  }
+
+  .page-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: auto;
+    margin-right:20px;
+  }
+
+  .logo-holder {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    align-items: left;
+  }
+  
+  .logo {
+    display: none;
+  }
+
+  .page-header__item{
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   width: auto;
   }
 
 
@@ -674,9 +792,19 @@ button:focus,
   left: 0px;
 }
 
-@media (min-width: 768px) {
-  .button-52 {
-    padding: 13px 50px 13px;
-  }
+
+.pt {
+  margin-left: 15px;
 }
 
+
+.logo-holder {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  align-items: left;
+}
+
+.logo {
+  width: 70%;
+}
